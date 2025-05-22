@@ -14,7 +14,7 @@ API para consulta de dados da vitivinicultura brasileira, com foco no Rio Grande
 
 ```bash
 git clone https://github.com/rmnobarra/api-vitivinicultura.git
-cd api-vitivinicultura
+cd api
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
