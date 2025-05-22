@@ -195,7 +195,7 @@ graph TD
 
 A aplicação pode ser acessada aqui:
 
-**https://api-vitivinicultura-y62s.onrender.com**
+**https://api-vitivinicultura-y62s.onrender.com/docs**
 
 ---
 
