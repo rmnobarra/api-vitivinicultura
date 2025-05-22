@@ -84,6 +84,37 @@ curl -H "Authorization: Bearer <TOKEN>" "http://localhost:8000/producao?ano=2023
 
 ---
 
+## Testes com Pytest
+
+Antes de executar os testes, ative o ambiente virtual:
+
+```bash
+cd api
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate   # Windows
+```
+
+Depois, execute o seguinte comando:
+
+```bash
+PYTHONPATH=. pytest app/tests -v
+```
+
+> Isso garante que o diretório `app/` seja reconhecido como pacote no Python.
+
+### ✅ O que os testes cobrem
+
+- Endpoint `/docs` (Swagger UI)
+- Login com JWT
+- Acesso autenticado a todas as rotas:
+  - `/producao`
+  - `/processamento`
+  - `/comercializacao`
+  - `/importacao`
+  - `/exportacao`
+
+---
+
 ## Arquitetura do Projeto - API de Vitivinicultura
 
 ```mermaid
