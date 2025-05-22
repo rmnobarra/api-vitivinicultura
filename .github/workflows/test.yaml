@@ -32,4 +32,4 @@ jobs:
 
     - name: Rodar testes
       working-directory: ./api
-      run: pytest
+      run: PYTHONPATH=./ pytest app/tests -v
