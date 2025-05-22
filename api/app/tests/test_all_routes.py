@@ -17,28 +17,33 @@ def test_producao():
     headers = get_auth_headers()
     response = client.get("/producao?ano=2023", headers=headers)
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
+    assert "dados" in response.json()
+    assert isinstance(response.json()["dados"], list)
 
 def test_processamento():
     headers = get_auth_headers()
     response = client.get("/processamento?ano=2023", headers=headers)
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
+    assert "dados" in response.json()
+    assert isinstance(response.json()["dados"], list)
 
 def test_comercializacao():
     headers = get_auth_headers()
     response = client.get("/comercializacao?ano=2023", headers=headers)
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
+    assert "dados" in response.json()
+    assert isinstance(response.json()["dados"], list)
 
 def test_importacao():
     headers = get_auth_headers()
     response = client.get("/importacao?ano=2023", headers=headers)
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
+    assert "dados" in response.json()
+    assert isinstance(response.json()["dados"], list)
 
 def test_exportacao():
     headers = get_auth_headers()
     response = client.get("/exportacao?ano=2023", headers=headers)
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
+    assert "dados" in response.json()
+    assert isinstance(response.json()["dados"], list)
