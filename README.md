@@ -84,11 +84,6 @@ curl -H "Authorization: Bearer <TOKEN>" "http://localhost:8000/producao?ano=2023
 
 ---
 
-## Contato
-
-Desenvolvido por @rmnobarra.
-
-
 ## Arquitetura do Projeto - API de Vitivinicultura
 
 ```mermaid
@@ -123,7 +118,7 @@ graph TD
 
 ---
 
-## Cenário de Aplicação para Machine Learning Futuro
+## Cenário de Aplicação para Machine Learning
 
 ### Previsão da Produção Nacional de Vinho nos Próximos Anos
 
@@ -161,9 +156,18 @@ graph TD
    ```bash
    web: uvicorn app.main:app --host=0.0.0.0 
    ```
-3. Configurar variáveis no painel da Render
+3. Configurar variáveis no painel da [Render](https://render.com/)
 4. Conectar o GitHub e fazer o deploy automático
-5. Testar a API online com autenticação e rotas públicas no endereço: https://api-vitivinicultura-y62s.onrender.com
+5. Testar a API online com autenticação e rotas públicas
+
+### Live Demo
+
+A aplicação pode ser acessada aqui:
+
+**https://api-vitivinicultura-y62s.onrender.com**
 
 ---
 
+## Contato
+
+Desenvolvido por @rmnobarra.
