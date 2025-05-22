@@ -156,14 +156,14 @@ graph TD
 
 ### Etapas para Deploy
 
-1. Criar repositório no GitHub com `README.md`, `Procfile`, `requirements.txt`
-2. Adicionar comando de execução:
-   ```txt
-   web: uvicorn app.main:app --host=0.0.0.0 --port=10000
+1. Criar repositório no GitHub com `README.md`, `render.yaml` e `requirements.txt`
+2. Adicionar comando de execução em start.sh:
+   ```bash
+   web: uvicorn app.main:app --host=0.0.0.0 
    ```
 3. Configurar variáveis no painel da Render
 4. Conectar o GitHub e fazer o deploy automático
-5. Testar a API online com autenticação e rotas públicas
+5. Testar a API online com autenticação e rotas públicas no endereço: https://api-vitivinicultura-y62s.onrender.com
 
 ---
 
